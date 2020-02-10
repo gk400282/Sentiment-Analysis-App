@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SIH | Team Rocket</title>
+        <link rel='shortcut icon' type='image/x-icon' href='{{ url_for('static', filename='favicon.ico') }}' />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">     -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="cover padded">
+                <h1 class="main header mb-l ts-l">Sentiment Analysis Portal</h1>
+                <div class="cover-inside w-100per p-lr-l mb-l">
+                    <form class="ui form w-100per" id="main-form">
+                        <div class="ui fluid action input">
+                            <!-- <label>User Input</label> -->
+                            <input type="text" id="main-input" name="main-input" placeholder="Enter your text" autocomplete="off">
+                            <div class="ui button" type="submit" id="submit-button">Submit</div>
+                        </div>
+                    </form>>
+                </div>
+                <h2 class="result header" id="result-display"></h2>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
